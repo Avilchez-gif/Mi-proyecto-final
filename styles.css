@@ -313,3 +313,12 @@ p{
     left: -30%;
     opacity: 1;
 }
+
+.project-card img {
+    width: 150px; /* Ancho fijo para que sea cuadrado */
+    height: 150px; /* Alto igual al ancho para mantener la proporción */
+    object-fit: cover; /* Recorta la imagen si es necesario para que encaje */
+    border-radius: 10px; /* Bordes redondeados para mejor estética */
+    display: block; /* Asegura un buen alineamiento */
+    margin: 0 auto; /* Centra la imagen dentro de la tarjeta */
+}
