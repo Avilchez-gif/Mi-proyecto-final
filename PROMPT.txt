@@ -1,0 +1,19 @@
+necesito que me ayudes a crear mi portafolio como junior en desarrollo web. Mi sitio web debe un borde grueso tipo ventana en los 4 lados, un estilo y color como las aureolas boreales del polo, fuera de este borde el fondo debe ser color periódico pálido. Debe estar estructurada en 4 secciones. La primera sección es un banner en la que lleve por título: I HELP YOU CREATE YOUR WEBSITE, el tipo de letra sea minimalista y de fondo se pueda colocar una imagen  y tenga opción a poner en las esquinas objetos movibles. Lasegunda sección debe tener tres tarjetas las cuales direcciones a mis proyectos de webs creadas; al pasar el mouse encima de estás que se vean sombreadas y al sacar el mouse que se vea mi proyecto, además cada uno tiene un título inventado por ti.  La tercera sección esté dividida en 2 columnas ambas del mismo tamaño; a la izquierda el texto de mi presentación, crealas tú; que sea un texto amigable y me presente como creativa e innovadora, a la derecha debe tener una imagen. La cuarta sección debe tener estar dividida en 2 columnas; la izquierda debe tener un formulario con nombre, correo y mensaje, el botón de enviar mensaje debe tener un colo gris verdoso. 
+
+
+antes de las tarjetas debe ir el banner principal, son 4 secciones. La primera sección es un banner principal en la que lleve por título: I HELP YOU CREATE YOUR WEBSITE, el tipo de letra sea minimalista y de fondo se pueda colocar una imagen  y tenga opción a poner en las esquinas objetos movibles. 
+
+que toda la letra sea tipo Brush Script, excepto el formulario. y que el simbolo de tres redes sociales como facebook , instagram y linkind aparezca en la parte superior izquierda de manera estática
+
+los íconos de redes sociales de color blanco y que sean como dibujo. La tercera sección debe tener dos columnas del mismo tamaño, en la izquierda texto de mi presentación y en la derecha una imagen. La cuarta sección debe tener dos columnas del mismo tamaño, a la izquierda debe estar el  formulario y a la derecha una imagen de una computadora en forma de dibujo en la que se muestre  muestre la programación de este trabajo
+
+disminuye el tamaño de las imagenes de las secciones 3 y 4
+
+que estas imagenes tenga un borde redondeado y que al pasar el mouse se vea una diagonal blanca brillosa
+
+que las iamgenes de las tarjetas todas esten del mismo tamaño y pequeñas
+
+que no abarquen todo el largo de la sección, que sea un cuadrado perfecto
+
+
+
