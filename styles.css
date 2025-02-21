@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Brush+Script+MT&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Brush Script MT';
+    background-color: #F5C771; /* Color de fondo tipo periódico pálido */
+}
+
+/* Redes sociales en la parte superior izquierda */
+.social-icons {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    filter: invert(1); /* Blanco con efecto de dibujo */
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+/* Estilos generales del layout */
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+/* ==== SECCIÓN 1: BANNER ==== */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url('banner-image.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid #74c7d9; /* Borde grueso inspirado en auroras boreales */
+}
+
+.banner h1 {
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Objetos movibles en el banner */
+.moving-objects {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.moving-object {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: float 5s infinite linear;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-30px); }
+    100% { transform: translateY(0px); }
+}
+
+/* ==== SECCIÓN 2: PROYECTOS ==== */
+.projects {
+    margin: 50px 0;
+    text-align: center;
+    
+}
+
+.projects h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.project-card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: grey;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s;
+}
+
+.project-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: background 0.3s;
+}
+
+.project-card:hover .overlay {
+    background: transparent;
+}
+
+/* ==== SECCIÓN 3: SOBRE MÍ ==== */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.about .text, .about .image {
+    width: 50%;
+    padding: 20px;
+}
+
+.about .text h2 {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.about .image img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%) contrast(200%); /* Estilo dibujo */
+}
+p{
+    font-size: 40px;
+}
+
+/* ==== SECCIÓN 4: CONTACTO ==== */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.contact .form {
+    width: 50%;
+    padding: 20px;
+}
+
+.contact .form h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+.contact .form input,
+.contact .form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif; /* Fuente diferente del resto del sitio */
+}
+
+.contact .form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6c8c7b; /* Gris verdoso */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+.contact .form button:hover {
+    background-color: #5a7b68;
+}
+
+/* Imagen de computadora con código en estilo dibujo */
+.contact .image {
+    width: 50%;
+    padding: 20px;
+}
+
+.contact .image img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%) contrast(200%);
+}
+
+/* ==== RESPONSIVE DESIGN ==== */
+@media screen and (max-width: 768px) {
+    .about, .contact {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about .text, .about .image,
+    .contact .form, .contact .image {
+        width: 100%;
+    }
+
+    .project-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.about .image img,
+.contact .image img {
+    width: 40%; /* Reduce el tamaño al 70% del contenedor */
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+    border-radius: 15px; /* Bordes redondeados */
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efecto de brillo diagonal */
+.about .image,
+.contact .image {
+    position: relative;
+    display: inline-block;
+}
+
+.about .image::before,
+.contact .image::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+/* Activación del efecto al pasar el mouse */
+.about .image:hover::before,
+.contact .image:hover::before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+
+
+.about .image img,
+.contact .image img {
+    width: 70%; /* Reduce el tamaño */
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px; /* Bordes redondeados */
+    position: relative;
+    overflow: hidden; /* Asegura que el brillo no sobresalga */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Contenedor para el efecto */
+.about .image,
+.contact .image {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+/* Capa de brillo */
+.about .image::after,
+.contact .image::after {
+    content: "";
+    position: absolute;
+    top: -120%;
+    left: -120%;
+    width: 250%;
+    height: 250%;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    transform: rotate(25deg);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+/* Efecto al pasar el mouse */
+.about .image:hover::after,
+.contact .image:hover::after {
+    top: -30%;
+    left: -30%;
+    opacity: 1;
+}
